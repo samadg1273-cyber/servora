@@ -1,0 +1,202 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: #f5f7fc;
+    color: #172033;
+    line-height: 1.6;
+}
+
+header {
+    background: white;
+    padding: 20px 5%;
+    min-height: 82px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    border-bottom: 1px solid #e8ebf2;
+}
+
+header h1 {
+    font-family: 'Manrope', sans-serif;
+    color: #3157e8;
+    font-size: 23px;
+    font-weight: 800;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #7b8498;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #3157e8;
+}
+
+button {
+    background: #3157e8;
+    color: white;
+    padding: 11px 19px;
+    border: none;
+    border-radius: 9px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #203fc0;
+}
+
+main {
+    width: 90%;
+    max-width: 1450px;
+    margin: 40px auto;
+}
+
+main > h2 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 32px;
+    margin-bottom: 6px;
+}
+
+main > p {
+    color: #7b8498;
+    margin-bottom: 30px;
+}
+
+section {
+    background: white;
+    border: 1px solid #e8ebf2;
+    border-radius: 16px;
+    padding: 28px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 20px rgba(25, 40, 80, 0.035);
+    overflow-x: auto;
+}
+
+section h3 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 19px;
+    margin-bottom: 22px;
+}
+
+section div {
+    display: inline-block;
+    vertical-align: top;
+    min-width: 180px;
+    padding: 20px;
+    margin: 5px;
+    background: #f6f8ff;
+    border: 1px solid #e8ecff;
+    border-radius: 13px;
+}
+
+section div h4 {
+    font-size: 13px;
+    color: #7b8498;
+    margin-bottom: 8px;
+}
+
+section div p {
+    font-size: 25px;
+    font-weight: 800;
+    color: #3157e8;
+}
+
+table {
+    width: 100%;
+    min-width: 650px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px;
+    border-bottom: 1px solid #e8ebf2;
+    text-align: left;
+    font-size: 13px;
+}
+
+th {
+    background: #f6f8fc;
+    color: #7b8498;
+}
+
+td {
+    color: #465066;
+}
+
+input, select, textarea {
+    display: block;
+    width: 100%;
+    max-width: 550px;
+    padding: 13px 15px;
+    margin: 9px 0 20px;
+    border: 1px solid #e8ebf2;
+    border-radius: 9px;
+    outline: none;
+    font: inherit;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #3157e8;
+}
+
+label {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: white;
+    border-top: 1px solid #e8ebf2;
+    color: #7b8498;
+    font-size: 13px;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        gap: 14px;
+    }
+
+    main {
+        width: 94%;
+        margin: 25px auto;
+    }
+
+    section {
+        padding: 18px;
+    }
+
+    main > h2 {
+        font-size: 25px;
+    }
+}

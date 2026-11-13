@@ -1,0 +1,254 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Worker Dashboard | Servora</title>
+
+    <link rel="stylesheet" href="css/worker.css">
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>SERVORA WORKER</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="customer.html">Customer</a>
+            <a href="worker.html">Worker</a>
+            <a href="agent.html">Agent</a>
+            <a href="admin.html">Admin</a>
+        </nav>
+
+        <button type="button">Logout</button>
+    </header>
+
+    <main>
+
+        <h2>Worker Dashboard</h2>
+        <p>Manage your jobs, bookings, profile and earnings.</p>
+
+        <!-- Overview -->
+        <section>
+            <h3>My Overview</h3>
+
+            <div>
+                <h4>Available Jobs</h4>
+                <p>0</p>
+            </div>
+
+            <div>
+                <h4>Assigned Jobs</h4>
+                <p>0</p>
+            </div>
+
+            <div>
+                <h4>Completed Jobs</h4>
+                <p>0</p>
+            </div>
+
+            <div>
+                <h4>Total Earnings</h4>
+                <p>₹0</p>
+            </div>
+        </section>
+
+        <!-- Worker Profile -->
+        <section>
+            <h3>My Profile</h3>
+
+            <form action="#">
+
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter your name">
+
+                <label>Mobile Number</label>
+                <input type="tel" placeholder="Enter mobile number">
+
+                <label>Email Address</label>
+                <input type="email" placeholder="Enter email">
+
+                <label>Service Category</label>
+                <select>
+                    <option value="">Select your skill</option>
+                    <option>Electrician</option>
+                    <option>Plumber</option>
+                    <option>AC Repair</option>
+                    <option>Home Cleaning</option>
+                    <option>Carpenter</option>
+                    <option>Appliance Repair</option>
+                </select>
+
+                <label>Experience</label>
+                <input type="number" placeholder="Experience in years">
+
+                <label>Service Location</label>
+                <input type="text" placeholder="Enter your working area">
+
+                <label>About Me</label>
+                <textarea placeholder="Describe your skills and experience"></textarea>
+
+                <button type="submit">Update Profile</button>
+
+            </form>
+        </section>
+
+        <!-- Availability -->
+        <section>
+            <h3>My Availability</h3>
+
+            <form action="#">
+                <label>Work Availability</label>
+
+                <select>
+                    <option>Available</option>
+                    <option>Unavailable</option>
+                </select>
+
+                <label>Working Hours</label>
+                <input type="text" placeholder="Example: 9 AM - 6 PM">
+
+                <button type="submit">Save Availability</button>
+            </form>
+        </section>
+
+        <!-- Available Jobs -->
+        <section>
+            <h3>Available Jobs</h3>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Job ID</th>
+                        <th>Service</th>
+                        <th>Location</th>
+                        <th>Expected Payment</th>
+                        <th>Job Date</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>JB001</td>
+                        <td>Electrician</td>
+                        <td>Delhi</td>
+                        <td>₹500</td>
+                        <td>12-11-2026</td>
+                        <td>
+                            <button type="button">Accept Job</button>
+                            <button type="button">Reject</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Assigned Jobs -->
+        <section>
+            <h3>My Assigned Jobs</h3>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Booking ID</th>
+                        <th>Customer</th>
+                        <th>Service</th>
+                        <th>Address</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>BK001</td>
+                        <td>Demo Customer</td>
+                        <td>AC Repair</td>
+                        <td>Delhi</td>
+                        <td>12-11-2026</td>
+                        <td>Assigned</td>
+                        <td><button type="button">View Details</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Update Job Status -->
+        <section>
+            <h3>Update Job Status</h3>
+
+            <form action="#">
+                <label>Booking ID</label>
+                <input type="text" placeholder="Enter booking ID">
+
+                <label>Job Status</label>
+                <select>
+                    <option value="">Select status</option>
+                    <option>Accepted</option>
+                    <option>On The Way</option>
+                    <option>Work Started</option>
+                    <option>Completed</option>
+                </select>
+
+                <label>Work Notes</label>
+                <textarea placeholder="Enter work details"></textarea>
+
+                <button type="submit">Update Job</button>
+            </form>
+        </section>
+
+        <!-- Earnings -->
+        <section>
+            <h3>My Earnings</h3>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Booking ID</th>
+                        <th>Service</th>
+                        <th>Amount</th>
+                        <th>Commission</th>
+                        <th>My Payment</th>
+                        <th>Payment Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>BK001</td>
+                        <td>AC Repair</td>
+                        <td>₹500</td>
+                        <td>₹50</td>
+                        <td>₹450</td>
+                        <td>Pending</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Ratings -->
+        <section>
+            <h3>Customer Ratings & Reviews</h3>
+
+            <div>
+                <h4>Average Rating</h4>
+                <p>0 / 5</p>
+            </div>
+
+            <p>No reviews available yet.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Servora. Worker Dashboard.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | Servora</title>
+<link rel="stylesheet" href="css/admin.css">
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>SERVORA ADMIN</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="customer.html">Customer</a>
+            <a href="worker.html">Worker</a>
+            <a href="agent.html">Agent</a>
+            <a href="admin.html">Admin</a>
+        </nav>
+
+        <button type="button">Logout</button>
+    </header>
+
+    <!-- Dashboard -->
+    <main>
+
+        <h2>Admin Dashboard</h2>
+        <p>Welcome to your website management panel.</p>
+
+        <!-- Statistics -->
+        <section>
+            <h3>Overview</h3>
+
+            <div>
+                <h4>Total Customers</h4>
+                <p>0</p>
+            </div>
+
+            <div>
+                <h4>Total Workers</h4>
+                <p>0</p>
+            </div>
+
+            <div>
+                <h4>Total Agents</h4>
+                <p>0</p>
+            </div>
+
+            <div>
+                <h4>Total Bookings</h4>
+                <p>0</p>
+            </div>
+
+            <div>
+                <h4>Total Revenue</h4>
+                <p>₹0</p>
+            </div>
+        </section>
+
+        <!-- User Management -->
+        <section>
+            <h3>User Management</h3>
+
+            <button type="button">View Customers</button>
+            <button type="button">View Workers</button>
+            <button type="button">View Agents</button>
+            <button type="button">Add New Agent</button>
+        </section>
+
+        <!-- Booking Management -->
+        <section>
+            <h3>Booking Management</h3>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Booking ID</th>
+                        <th>Customer</th>
+                        <th>Service</th>
+                        <th>Worker</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>BK001</td>
+                        <td>Demo Customer</td>
+                        <td>Electrician</td>
+                        <td>Demo Worker</td>
+                        <td>12-11-2026</td>
+                        <td>Pending</td>
+                        <td><button type="button">View</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Service Management -->
+        <section>
+            <h3>Service Management</h3>
+
+            <form action="#">
+                <label>Service Name</label>
+                <input type="text" placeholder="Enter service name">
+
+                <label>Service Price</label>
+                <input type="number" placeholder="Enter price">
+
+                <label>Service Description</label>
+                <textarea placeholder="Enter description"></textarea>
+
+                <button type="submit">Add Service</button>
+            </form>
+        </section>
+
+        <!-- Payment Management -->
+        <section>
+            <h3>Payment Management</h3>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Payment ID</th>
+                        <th>Booking ID</th>
+                        <th>Amount</th>
+                        <th>Payment Method</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>PAY001</td>
+                        <td>BK001</td>
+                        <td>₹500</td>
+                        <td>Online</td>
+                        <td>Pending</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Complaints -->
+        <section>
+            <h3>Customer Complaints</h3>
+
+            <table border="1">
+                <tr>
+                    <th>Complaint ID</th>
+                    <th>Customer</th>
+                    <th>Issue</th>
+                    <th>Status</th>
+                </tr>
+
+                <tr>
+                    <td>CP001</td>
+                    <td>Demo Customer</td>
+                    <td>Service delay</td>
+                    <td>Open</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Reports -->
+        <section>
+            <h3>Reports</h3>
+
+            <button type="button">Booking Reports</button>
+            <button type="button">Revenue Reports</button>
+            <button type="button">Worker Reports</button>
+            <button type="button">Customer Reports</button>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Servora. Admin Dashboard.</p>
+    </footer>
+
+</body>
+</html>

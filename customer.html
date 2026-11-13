@@ -1,0 +1,297 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Dashboard | Servora</title>
+
+    <link rel="stylesheet" href="css/customer.css">
+    <script src="js/customer.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>SERVORA CUSTOMER</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="customer.html">Customer</a>
+            <a href="worker.html">Worker</a>
+            <a href="agent.html">Agent</a>
+            <a href="admin.html">Admin</a>
+        </nav>
+
+        <button type="button">Logout</button>
+    </header>
+
+    <main>
+
+        <h2>Welcome to Your Dashboard</h2>
+        <p>Book trusted professionals and manage your home services.</p>
+
+        <!-- Overview -->
+        <section>
+            <h3>My Overview</h3>
+
+            <div>
+                <h4>Total Bookings</h4>
+                <p>0</p>
+            </div>
+
+            <div>
+                <h4>Active Bookings</h4>
+                <p>0</p>
+            </div>
+
+            <div>
+                <h4>Completed Services</h4>
+                <p>0</p>
+            </div>
+
+            <div>
+                <h4>Total Payments</h4>
+                <p>₹0</p>
+            </div>
+        </section>
+
+        <!-- Customer Profile -->
+        <section>
+            <h3>My Profile</h3>
+
+            <form action="#">
+
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter your name">
+
+                <label>Mobile Number</label>
+                <input type="tel" placeholder="Enter mobile number">
+
+                <label>Email Address</label>
+                <input type="email" placeholder="Enter email">
+
+                <label>Home Address</label>
+                <textarea placeholder="Enter your complete address"></textarea>
+
+                <label>City</label>
+                <input type="text" placeholder="Enter city">
+
+                <label>PIN Code</label>
+                <input type="text" placeholder="Enter PIN code">
+
+                <button type="submit">Save Profile</button>
+
+            </form>
+        </section>
+
+        <!-- Browse Services -->
+        <section>
+            <h3>Explore Home Services</h3>
+
+            <div>
+                <h4>Electrician</h4>
+                <p>Electrical repairs and installations.</p>
+                <button type="button">Book Now</button>
+            </div>
+
+            <div>
+                <h4>Plumber</h4>
+                <p>Pipe repairs, leakage and plumbing.</p>
+                <button type="button">Book Now</button>
+            </div>
+
+            <div>
+                <h4>AC Repair</h4>
+                <p>AC servicing and cooling solutions.</p>
+                <button type="button">Book Now</button>
+            </div>
+
+            <div>
+                <h4>Home Cleaning</h4>
+                <p>Professional home cleaning services.</p>
+                <button type="button">Book Now</button>
+            </div>
+
+            <div>
+                <h4>Carpenter</h4>
+                <p>Furniture repair and woodwork.</p>
+                <button type="button">Book Now</button>
+            </div>
+
+            <div>
+                <h4>Appliance Repair</h4>
+                <p>Repair solutions for home appliances.</p>
+                <button type="button">Book Now</button>
+            </div>
+        </section>
+
+        <!-- New Booking -->
+        <section>
+            <h3>Book a Service</h3>
+
+            <form action="#">
+
+                <label>Select Service</label>
+                <select>
+                    <option value="">Choose a service</option>
+                    <option>Electrician</option>
+                    <option>Plumber</option>
+                    <option>AC Repair</option>
+                    <option>Home Cleaning</option>
+                    <option>Carpenter</option>
+                    <option>Appliance Repair</option>
+                </select>
+
+                <label>Service Address</label>
+                <textarea placeholder="Enter service location"></textarea>
+
+                <label>Booking Date</label>
+                <input type="date">
+
+                <label>Preferred Time</label>
+                <input type="time">
+
+                <label>Describe Your Problem</label>
+                <textarea placeholder="Tell us what service you need"></textarea>
+
+                <button type="submit">Confirm Booking</button>
+
+            </form>
+        </section>
+
+        <!-- Booking History -->
+        <section>
+            <h3>My Bookings</h3>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Booking ID</th>
+                        <th>Service</th>
+                        <th>Worker</th>
+                        <th>Date</th>
+                        <th>Amount</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>BK001</td>
+                        <td>Electrician</td>
+                        <td>Demo Worker</td>
+                        <td>12-11-2026</td>
+                        <td>₹500</td>
+                        <td>Confirmed</td>
+                        <td><button type="button">View Details</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Track Booking -->
+        <section>
+            <h3>Track Your Booking</h3>
+
+            <form action="#">
+                <label>Enter Booking ID</label>
+                <input type="text" placeholder="Example: BK001">
+
+                <button type="button">Track Booking</button>
+            </form>
+
+            <p>Booking progress will appear here.</p>
+        </section>
+
+        <!-- Payments -->
+        <section>
+            <h3>My Payments</h3>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Payment ID</th>
+                        <th>Booking ID</th>
+                        <th>Amount</th>
+                        <th>Payment Method</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>PAY001</td>
+                        <td>BK001</td>
+                        <td>₹500</td>
+                        <td>Online</td>
+                        <td>Pending</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Complaints -->
+        <section>
+            <h3>Raise a Complaint</h3>
+
+            <form action="#">
+
+                <label>Booking ID</label>
+                <input type="text" placeholder="Enter booking ID">
+
+                <label>Complaint Type</label>
+                <select>
+                    <option value="">Select issue</option>
+                    <option>Worker Delay</option>
+                    <option>Service Quality</option>
+                    <option>Payment Issue</option>
+                    <option>Wrong Service</option>
+                    <option>Other</option>
+                </select>
+
+                <label>Complaint Details</label>
+                <textarea placeholder="Describe your issue"></textarea>
+
+                <button type="submit">Submit Complaint</button>
+
+            </form>
+        </section>
+
+        <!-- Reviews -->
+        <section>
+            <h3>Rate Your Service</h3>
+
+            <form action="#">
+
+                <label>Booking ID</label>
+                <input type="text" placeholder="Enter booking ID">
+
+                <label>Your Rating</label>
+                <select>
+                    <option value="">Select rating</option>
+                    <option>5 - Excellent</option>
+                    <option>4 - Very Good</option>
+                    <option>3 - Good</option>
+                    <option>2 - Average</option>
+                    <option>1 - Poor</option>
+                </select>
+
+                <label>Your Review</label>
+                <textarea placeholder="Write your experience"></textarea>
+
+                <button type="submit">Submit Review</button>
+
+<form id="booking-form">
+            </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Servora. All rights reserved.</p>
+    </footer>
+</body>
+</html>
