@@ -1545,3 +1545,157 @@ footer a {
         transition-duration: .01ms !important;
     }
 }
+/* CUSTOMER-FRIENDLY HEADER */
+
+.customer-header {
+    position: sticky;
+    top: 0;
+    z-index: 200;
+    background: rgba(255,255,255,.97);
+    border-bottom: 1px solid #edf0ed;
+}
+
+.customer-nav {
+    width: min(1160px, 90%);
+    min-height: 76px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.customer-logo {
+    font: 800 25px "Manrope", sans-serif;
+    letter-spacing: -1.3px;
+}
+
+.customer-logo span {
+    color: #36785c;
+}
+
+.customer-nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.customer-nav-links a,
+.account-link {
+    font-size: 12px;
+    font-weight: 600;
+    color: #59635c;
+    transition: color .2s ease;
+}
+
+.customer-nav-links a:hover,
+.account-link:hover {
+    color: #36785c;
+}
+
+.customer-menu {
+    display: none;
+    border: 0;
+    background: #edf4ef;
+    color: #36785c;
+    border-radius: 9px;
+    padding: 9px 12px;
+    font-size: 20px;
+}
+
+@media(max-width:650px) {
+    .customer-nav {
+        min-height: 65px;
+    }
+
+    .customer-nav-links {
+        display: none;
+        position: absolute;
+        top: 65px;
+        left: 0;
+        right: 0;
+        background: white;
+        padding: 20px 6%;
+        border-bottom: 1px solid #edf0ed;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .customer-nav-links.show {
+        display: flex;
+    }
+
+    .customer-menu {
+        display: block;
+    }
+
+    .account-link {
+        display: none;
+    }
+}
+
+
+/* COMPACT SEARCH BAR */
+
+.search-box {
+    max-width: 590px;
+    padding: 7px;
+    gap: 3px;
+    border-radius: 11px;
+}
+
+.search-field {
+    padding: 5px 8px;
+    gap: 6px;
+}
+
+.search-field input {
+    font-size: 11px;
+}
+
+.search-button {
+    padding: 11px 15px;
+    font-size: 11px;
+}
+
+.hero h1 {
+    max-width: 550px;
+    letter-spacing: -1.8px;
+}
+
+.section {
+    scroll-margin-top: 90px;
+}
+
+
+/* SUBTLE RIGHT-TO-LEFT ENTRANCE */
+
+.reveal-left {
+    opacity: 0;
+    transform: translateX(35px);
+    transition: opacity .7s ease, transform .7s ease;
+}
+
+.reveal-left.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+@media(max-width:650px) {
+    .search-box {
+        max-width: 100%;
+    }
+
+    .search-field input {
+        font-size: 12px;
+    }
+}
+
+@media(prefers-reduced-motion:reduce) {
+    .reveal-left {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}

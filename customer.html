@@ -12,17 +12,27 @@
     <script src="js/customer.js" defer></script>
 </head>
 <body>
-    <header class="site-header">
-        <a class="brand" href="index.html" aria-label="Servora home"><span class="brand-mark">S</span><span>SERVORA<small>HOME SERVICES</small></span></a>
-        <nav class="main-nav" aria-label="Main navigation">
+    <header class="customer-header">
+    <div class="customer-nav">
+
+        <a href="index.html" class="customer-logo">
+            SERVORA<span>.</span>
+        </a>
+
+        <nav class="customer-nav-links" id="customerNav">
             <a href="index.html">Home</a>
-            <a class="active" href="customer.html">Customer</a>
-            <a href="worker.html">Worker</a>
-            <a href="agent.html">Agent</a>
-            <a href="admin.html">Admin</a>
+            <a href="index.html#services">Services</a>
+            <a href="#bookings">My Bookings</a>
+            <a href="#support">Help & Support</a>
         </nav>
-        <a class="profile-shortcut" href="#profile">My Profile <span aria-hidden="true">↗</span></a>
-    </header>
+
+        <div class="customer-nav-actions">
+            <a href="#profile" class="account-link">My Account</a>
+            <button class="customer-menu" id="customerMenu" aria-label="Open menu">☰</button>
+        </div>
+
+    </div>
+</header>
 
     <main class="page-shell">
         <section class="welcome-hero">

@@ -1,288 +1,379 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Service Booking | Home Services Made Simple</title>
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="Book trusted home services with SERVORA.">
+
+    <title>SERVORA | Home Services Made Simple</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
+    
 </head>
 
 <body>
 
-    <!-- NAVBAR -->
-    <header class="navbar">
+<!-- HEADER -->
+<header class="header">
+    <div class="container nav-container">
 
-        <a href="index.html" class="logo">
-            SERV<span>ORA.</span>
-        </a>
+        <a href="index.html" class="logo">SERVORA<span>.</span></a>
 
         <nav class="nav-links">
-            <a href="index.html">Home</a>
             <a href="#services">Services</a>
-            <a href="#about">About Us</a>
-            <a href="#join">Become a Partner</a>
+            <a href="#popular">Popular</a>
+            <a href="#inspiration">Home Inspiration</a>
+            <a href="#about">About</a>
         </nav>
 
         <div class="nav-actions">
-            <a href="customer.html" class="login-link">Sign In</a>
+            <a href="customer.html" class="login-link">Login</a>
             <a href="customer.html" class="nav-button">Book a Service</a>
         </div>
 
-    </header>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+            ☰
+        </button>
+
+    </div>
+</header>
 
 
-    <!-- HERO SECTION -->
-    <main>
+<!-- HERO -->
+<section class="hero">
+    <div class="container hero-grid">
 
-        <section class="hero">
+        <div class="hero-content">
+            <span class="eyebrow">YOUR HOME, OUR CARE</span>
 
-            <div class="hero-content">
+            <h1>
+                A better way to
+                <span>care for your home.</span>
+            </h1>
 
-                <span class="hero-tag">YOUR HOME, OUR PRIORITY</span>
+            <p>
+                From everyday repairs to home improvements,
+                find trusted professionals for every corner of your home.
+            </p>
 
-                <h1>
-                    Your home deserves
-                    <span>better care.</span>
-                </h1>
-
-                <p>
-                    Discover trusted professionals for every corner
-                    of your home. Quality service, right at your doorstep.
-                </p>
-
-                <div class="search-box">
-
-                    <div class="search-field">
-                        <label>LOCATION</label>
-                        <input type="text" placeholder="Enter your location">
-                    </div>
-
-                    <div class="search-divider"></div>
-
-                    <div class="search-field">
-                        <label>WHAT DO YOU NEED?</label>
-                        <select>
-                            <option value="">Select a service</option>
-                            <option>Electrician</option>
-                            <option>Plumber</option>
-                            <option>AC Repair</option>
-                            <option>Home Cleaning</option>
-                            <option>Carpenter</option>
-                            <option>Appliance Repair</option>
-                        </select>
-                    </div>
-
-                    <a href="customer.html" class="search-button">
-                        Explore Services
-                    </a>
-
+            <div class="search-box">
+                <div class="search-field">
+                    <span>⌖</span>
+                    <input type="text" placeholder="Enter your location">
                 </div>
 
-                <div class="hero-trust">
-                    <span>✓ Verified professionals</span>
-                    <span>✓ Convenient booking</span>
-                    <span>✓ Reliable support</span>
+                <div class="search-field service-search">
+                    <span>⌕</span>
+                    <input type="text" placeholder="What service do you need?">
                 </div>
 
+                <button type="button" class="search-button" id="searchButton">
+                    Find a Service
+                </button>
             </div>
 
-            <div class="hero-image">
-                <img
-                    src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=85"
-                    alt="Professional home cleaning service">
+            <div class="hero-trust">
+                <span>✓ Trusted professionals</span>
+                <span>✓ Convenient booking</span>
             </div>
+        </div>
 
-        </section>
+        <div class="hero-image-wrap">
+            <img
+                src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1100&q=85"
+                alt="Beautiful modern home interior"
+                class="hero-image"
+            >
 
-
-        <!-- SERVICES SECTION -->
-        <section class="services-section" id="services">
-
-            <div class="section-heading">
+            <div class="floating-note">
+                <span class="note-icon">✦</span>
                 <div>
-                    <span class="section-tag">OUR SERVICES</span>
-                    <h2>Everything your home needs.</h2>
-                    <p>Professional help for everyday home services.</p>
+                    <strong>Care for every corner</strong>
+                    <small>Home services made simple</small>
                 </div>
-
-                <a href="customer.html" class="view-all">
-                    View all services →
-                </a>
             </div>
+        </div>
+
+    </div>
+</section>
 
 
-            <div class="service-grid">
+<!-- SERVICE CATEGORIES -->
+<section class="section categories-section" id="services">
+    <div class="container">
 
-                <a href="customer.html" class="service-card">
-                    <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=700&q=80" alt="Electrician service">
-                    <div class="service-info">
-                        <h3>Electrician</h3>
-                        <p>Repairs & installations</p>
-                    </div>
-                </a>
-
-                <a href="customer.html" class="service-card">
-                    <img src="https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=700&q=80" alt="Plumbing service">
-                    <div class="service-info">
-                        <h3>Plumbing</h3>
-                        <p>Leaks & pipe repairs</p>
-                    </div>
-                </a>
-
-                <a href="customer.html" class="service-card">
-                    <img src="https://images.unsplash.com/photo-1631545806609-3c6d2e8c5e3d?auto=format&fit=crop&w=700&q=80" alt="AC repair service">
-                    <div class="service-info">
-                        <h3>AC Repair</h3>
-                        <p>Cooling & maintenance</p>
-                    </div>
-                </a>
-
-                <a href="customer.html" class="service-card">
-                    <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=700&q=80" alt="Home cleaning service">
-                    <div class="service-info">
-                        <h3>Home Cleaning</h3>
-                        <p>Fresh & spotless spaces</p>
-                    </div>
-                </a>
-
-                <a href="customer.html" class="service-card">
-                    <img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=700&q=80" alt="Carpentry service">
-                    <div class="service-info">
-                        <h3>Carpenter</h3>
-                        <p>Furniture & woodwork</p>
-                    </div>
-                </a>
-
-                <a href="customer.html" class="service-card">
-                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=700&q=80" alt="Appliance repair service">
-                    <div class="service-info">
-                        <h3>Appliance Repair</h3>
-                        <p>Home appliance solutions</p>
-                    </div>
-                </a>
-
-            </div>
-
-        </section>
-
-
-        <!-- ABOUT SECTION -->
-        <section class="about-section" id="about">
-
-            <div class="about-image">
-                <img
-                    src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=85"
-                    alt="Beautiful modern home interior">
-            </div>
-
-            <div class="about-content">
-
-                <span class="section-tag">WHY CHOOSE US</span>
-
-                <h2>More than a service. A better experience.</h2>
-
-                <p>
-                    We make finding home service professionals simple.
-                    From booking to service completion, our platform
-                    is designed to make your experience convenient.
-                </p>
-
-                <div class="about-point">
-                    <span>01</span>
-                    <div>
-                        <h3>Easy Booking</h3>
-                        <p>Book your required service in just a few steps.</p>
-                    </div>
-                </div>
-
-                <div class="about-point">
-                    <span>02</span>
-                    <div>
-                        <h3>Professional Partners</h3>
-                        <p>Connect with service professionals on our platform.</p>
-                    </div>
-                </div>
-
-                <div class="about-point">
-                    <span>03</span>
-                    <div>
-                        <h3>Dedicated Support</h3>
-                        <p>Get assistance throughout your booking journey.</p>
-                    </div>
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- WORKER JOIN SECTION -->
-        <section class="join-section" id="join">
-
+        <div class="section-heading">
             <div>
-                <span class="section-tag">GROW WITH US</span>
-                <h2>Are you a skilled professional?</h2>
-                <p>
-                    Join our service partner network and connect
-                    with customers looking for your skills.
-                </p>
+                <span class="eyebrow">EXPLORE SERVICES</span>
+                <h2>Find the right help for your home</h2>
+<p>Explore trusted services for everyday home needs.</p>
             </div>
+        </div>
 
-            <a href="worker.html" class="join-button">
-                Become a Partner →
+        <div class="category-grid">
+
+            <a href="customer.html" class="category-card">
+                <div class="category-icon">⚡</div>
+                <h3>Electrician</h3>
+                <p>Electrical repairs</p>
             </a>
 
-        </section>
+            <a href="customer.html" class="category-card">
+                <div class="category-icon">♧</div>
+                <h3>Plumbing</h3>
+                <p>Leaks and fittings</p>
+            </a>
 
-    </main>
+            <a href="customer.html" class="category-card">
+                <div class="category-icon">▧</div>
+                <h3>Painting</h3>
+                <p>Walls and interiors</p>
+            </a>
+
+            <a href="customer.html" class="category-card">
+                <div class="category-icon">⌂</div>
+                <h3>Carpentry</h3>
+                <p>Furniture and woodwork</p>
+            </a>
+
+            <a href="customer.html" class="category-card">
+                <div class="category-icon">❄</div>
+                <h3>AC Technician</h3>
+                <p>AC repair and service</p>
+            </a>
+
+            <a href="customer.html" class="category-card">
+                <div class="category-icon">✧</div>
+                <h3>Home Cleaning</h3>
+                <p>Fresh and clean spaces</p>
+            </a>
+
+        </div>
+
+    </div>
+</section>
 
 
-    <!-- FOOTER -->
-    <footer class="footer">
+<!-- POPULAR SERVICES AND PRICES -->
+<section class="section popular-section" id="popular">
+    <div class="container">
 
-        <div class="footer-main">
-
-            <div class="footer-brand">
-                <a href="index.html" class="logo">
-                    SERV<span>ORA.</span>
-                </a>
-
-                <p>
-                    Making home services simpler,
-                    smarter and more convenient.
-                </p>
+        <div class="section-heading">
+            <div>
+                <span class="eyebrow">POPULAR CHOICES</span>
+                <h2>Services people often need</h2>
+                <p>Explore individual jobs and their service details.</p>
             </div>
 
-            <div class="footer-column">
-                <h3>Explore</h3>
-                <a href="index.html">Home</a>
-                <a href="#services">Services</a>
-                <a href="#about">About Us</a>
+            <a href="customer.html" class="text-link">Explore all services →</a>
+        </div>
+
+        <div class="popular-grid">
+
+            <article class="popular-card">
+                <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=700&q=85" alt="Electrician working">
+                <div class="popular-info">
+                    <span class="service-type">ELECTRICAL</span>
+                    <h3>Electrical repair</h3>
+                    <p>Inspection and electrical troubleshooting.</p>
+                    <div class="price-row">
+                        <span>View service price</span>
+                        <a href="customer.html">Details →</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="popular-card">
+                <img src="https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=700&q=85" alt="Plumbing repair">
+                <div class="popular-info">
+                    <span class="service-type">PLUMBING</span>
+                    <h3>Tap and pipe repair</h3>
+                    <p>Repair of common household plumbing issues.</p>
+                    <div class="price-row">
+                        <span>View service price</span>
+                        <a href="customer.html">Details →</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="popular-card">
+                <img src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=700&q=85" alt="Painter painting a wall">
+                <div class="popular-info">
+                    <span class="service-type">PAINTING</span>
+                    <h3>Wall painting</h3>
+                    <p>Refresh your walls with professional painting.</p>
+                    <div class="price-row">
+                        <span>View service price</span>
+                        <a href="customer.html">Details →</a>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- HOME INSPIRATION GALLERY: AFTER PRICES -->
+<section class="section inspiration-section" id="inspiration">
+    <div class="container">
+
+        <div class="section-heading">
+            <div>
+                <span class="eyebrow">A LITTLE HOME INSPIRATION</span>
+                <h2>Make your space feel like home.</h2>
+                <p>Beautiful spaces begin with thoughtful care.</p>
+            </div>
+        </div>
+
+        <div class="inspiration-grid">
+
+            <div class="inspiration-large">
+                <img
+                    src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=85"
+                    alt="Beautiful decorated living room"
+                    loading="lazy"
+                >
+                <div class="image-caption">
+                    <span>THE LIVING SPACE</span>
+                    <h3>A home that welcomes you.</h3>
+                </div>
             </div>
 
-            <div class="footer-column">
-                <h3>Join Us</h3>
-                <a href="worker.html">Become a Partner</a>
-                <a href="agent.html">Agent Login</a>
-                <a href="admin.html">Admin Login</a>
-            </div>
+            <div class="inspiration-side">
 
-            <div class="footer-column">
-                <h3>Support</h3>
-                <a href="mailto:support@example.com">Contact Us</a>
-                <a href="customer.html">Customer Login</a>
+                <div class="inspiration-small">
+                    <img
+                        src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=85"
+                        alt="Elegant modern home interior"
+                        loading="lazy"
+                    >
+                    <div class="small-caption">Thoughtful details</div>
+                </div>
+
+                <div class="inspiration-small">
+                    <img
+                        src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=800&q=85"
+                        alt="Beautiful home decor"
+                        loading="lazy"
+                    >
+                    <div class="small-caption">Comfort in every corner</div>
+                </div>
+
             </div>
 
         </div>
 
-        <div class="footer-bottom">
-            <p>© 2026 Servora. All rights reserved.</p>
+    </div>
+</section>
+
+
+<!-- AUTO SLIDING SERVICES -->
+<section class="section all-services-section">
+    <div class="container">
+
+        <div class="section-heading">
+            <div>
+                <span class="eyebrow">SERVORA SERVICES</span>
+                <h2>Here for every home need.</h2>
+                <p>Explore more ways we can help around your home.</p>
+            </div>
+
+            <div class="slider-controls">
+                <button id="slidePrev" aria-label="Previous services">←</button>
+                <button id="slideNext" aria-label="Next services">→</button>
+            </div>
         </div>
 
-    </footer>
+        <div class="service-slider" id="serviceSlider">
+
+            <a href="customer.html" class="service-slide">
+                <img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=600&q=80" alt="Electrician" loading="lazy">
+                <div><h3>Electrician</h3><p>Repairs and installations</p></div>
+            </a>
+
+            <a href="customer.html" class="service-slide">
+                <img src="https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=600&q=80" alt="Plumber" loading="lazy">
+                <div><h3>Plumbing</h3><p>Leaks and fittings</p></div>
+            </a>
+
+            <a href="customer.html" class="service-slide">
+                <img src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=600&q=80" alt="Painter" loading="lazy">
+                <div><h3>Painter</h3><p>Painting and finishing</p></div>
+            </a>
+
+            <a href="customer.html" class="service-slide">
+                <img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=600&q=80" alt="Carpenter" loading="lazy">
+                <div><h3>Carpenter</h3><p>Furniture and woodwork</p></div>
+            </a>
+
+            <a href="customer.html" class="service-slide">
+                <img src="https://images.unsplash.com/photo-1631545806609-8e7e9d6b4b7d?auto=format&fit=crop&w=600&q=80" alt="Air conditioner" loading="lazy">
+                <div><h3>AC Technician</h3><p>Cooling and maintenance</p></div>
+            </a>
+
+            <a href="customer.html" class="service-slide">
+                <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=600&q=80" alt="Home cleaning" loading="lazy">
+                <div><h3>Home Cleaning</h3><p>Everyday home care</p></div>
+            </a>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- WHY SERVORA -->
+<section class="section why-section" id="about">
+    <div class="container why-grid">
+
+        <div>
+            <span class="eyebrow">WHY SERVORA</span>
+            <h2>Home care should feel simple.</h2>
+            <p class="why-description">
+                A clear and convenient way to find the right help
+                for your home, without unnecessary complications.
+            </p>
+        </div>
+
+        <div class="why-points">
+            <div><span>01</span><strong>Convenient booking</strong><p>Choose a service and preferred time.</p></div>
+            <div><span>02</span><strong>Clear service details</strong><p>Understand the work before booking.</p></div>
+            <div><span>03</span><strong>Customer support</strong><p>Get help when you need it.</p></div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container footer-content">
+        <div>
+            <a href="index.html" class="logo footer-logo">SERVORA<span>.</span></a>
+            <p>Thoughtful care for every home.</p>
+        </div>
+
+        <div class="footer-links">
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="customer.html">Customer Login</a>
+        </div>
+
+        <p class="copyright">© 2026 SERVORA. All rights reserved.</p>
+    </div>
+</footer>
+
+
+<script src="js/main.js"></script>
 
 </body>
 </html>
